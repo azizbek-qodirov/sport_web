@@ -54,3 +54,4 @@ func (m *ChatManager) GetMessages(matchID string) (*models.MessageGARes, error) 
 
 	return &messages, nil
 }
+
