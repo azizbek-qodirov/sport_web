@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Football Scores</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="games-history" id="gamesHistory">
+            <h2>Games History</h2>
+            <ul id="historyList">
+                <!-- List of games will be dynamically added here -->
+            </ul>
+        </div>
+        <div class="live-chat" id="liveChat">
+            <div class="chat-header">
+                <h2 id="matchTitle">Country A vs Country B</h2>
+                <p id="liveScore">Score: 0 - 0</p>
+            </div>
+            <div class="chat-content" id="chatContent">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+        </div>
+        <div class="additional-details" id="additionalDetails">
+            <h2>Additional Details</h2>
+            <div id="detailsContent">
+                <!-- Additional details will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

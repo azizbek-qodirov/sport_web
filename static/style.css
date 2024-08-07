@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #e8f0fe;
+    color: #333;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.9)),
+        url('https://www.shutterstock.com/image-vector/cricket-tournament-concept-night-stadium-260nw-1324539386.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.games-history {
+    width: 25%;
+    background-color: rgba(233, 236, 239, 0.8);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.live-chat {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+}
+
+.chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.chat-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgba(248, 249, 250, 0.8);
+}
+
+.additional-details {
+    width: 25%;
+    background-color: rgba(233, 236, 239, 0.8);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #007bff;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#matchTitle {
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#liveScore {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.message {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    max-width: 90%;
+    align-self: flex-start;
+    animation: slideIn 0.5s ease-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.message-time {
+    font-size: 0.8em;
+    color: rgba(255,255,255,0.7);
+    text-align: right;
+    margin-top: 5px;
+}
+
+#detailsContent p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+#detailsContent h3 {
+    color: #007bff;
+    margin-top: 20px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.score-update {
+    animation: pulse 0.5s ease-in-out;
+}
