@@ -20,6 +20,7 @@ type Config struct {
 	MONGO_URI                  string
 	MONGO_DB_NAME              string
 	MONGO_CHAT_COLLECTION_NAME string
+	KAFKA_BROKER               string
 }
 
 func Load() *Config {
@@ -40,6 +41,7 @@ func Load() *Config {
 	config.MONGO_URI = cast.ToString(coalesce("MONGO_URI", "mongodb://localhost:27017"))
 	config.MONGO_DB_NAME = cast.ToString(coalesce("MONGO_DB_NAME", "sport"))
 	config.MONGO_CHAT_COLLECTION_NAME = cast.ToString(coalesce("MONGO_CHAT_COLLECTION_NAME", "chat"))
+	config.KAFKA_BROKER = cast.ToString(coalesce("KAFKA_BROKER", "localhost:"))
 
 	return &config
 }
